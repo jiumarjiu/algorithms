@@ -1,0 +1,9 @@
+1.2-1 Um exemplo de aplicação que exija um algoritmo:
+  - Uma roteirização de visitas para um vendedor.
+  Precisaria de algoritmos para dar um rating para cada possivel visita e ordenar os clientes.
+
+1.2-2 8n² < 64n.lg(n)
+  simplificando: n < 8log(n)
+  resposta com js no arquivo exectime.js --- 44
+
+1.2-3 100n2 >= 2n

@@ -1,0 +1,43 @@
+1.1.1 
+  Ordenação: em uma listagem de clientes, ordenar pelo que mais comprou
+  Envoltoria Convexa: em topografia o calculo do um perimetro com base em pontos demarcados.
+1.1.2
+  Medidas de eficiencia: 
+  Uso de Memória
+1.1.3
+  Uma estrutura de dados: Array
+  Pontos fortes:
+    facil acesso a cada elemento;
+  Limitações: 
+    para cada mudança no array, voce usa memoria proporcional ao tamanho dele
+1.1.5
+  Em um caso de homicidio apensa uma solução servirá, pois não se pode de maneira alguma acusar a pessoa errada.
+  Em um caso de roteirização de trafego automotivo a solução pode ser aproximada
+
+1.2.1
+  Na fabricação de chips e processadores, o custo operacional da maquina é alto. Com 
+  isso, um algoritmo eficiente reduz custos.
+1.2.2
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
