@@ -1,21 +1,23 @@
 var tpl
 var data = {}
-
-
+// decrescente
 axios.get('insertionsort.htm').then(function (res) {
   tpl = res.data
   data.Array = []
+  Inicio = []
   count = 0
   A = []
-  n = 25
+  n = 6
   for (let index = 0; index < n; index++) {  
-    A.push(Math.floor(Math.random() * 100))
+    number = Math.floor(Math.random() * 100)
+    A.push(number)
+    Inicio.push(number)
   }
   for (let j = 1; j < A.length; j++) {
     i = j - 1
     chave = A[j]
     console.log('chave: '+chave);
-    while (i>=0 && A[i]>chave) {
+    while (i>=0 && A[i]<chave) {
       count += 1
       console.log('valor i: '+ A[i]);
       A[i+1] = A[i]
@@ -36,10 +38,62 @@ axios.get('insertionsort.htm').then(function (res) {
       })
     }
   }
-  
+  data.subtitle = 'Para '+n+' elementos em um Array: '+Inicio+'. Foram necessários '+count+' passos para ordenar'
   console.log(data);
   document.getElementById('view').innerHTML = Mustache.render(tpl, data)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// crescente
+// axios.get('insertionsort.htm').then(function (res) {
+//   tpl = res.data
+//   data.Array = []
+//   count = 0
+//   A = []
+//   n = 6
+//   for (let index = 0; index < n; index++) {  
+//     A.push(Math.floor(Math.random() * 100))
+//   }
+//   for (let j = 1; j < A.length; j++) {
+//     i = j - 1
+//     chave = A[j]
+//     console.log('chave: '+chave);
+//     while (i>=0 && A[i]>chave) {
+//       count += 1
+//       console.log('valor i: '+ A[i]);
+//       A[i+1] = A[i]
+//       A[i] = chave 
+//       i = i - 1
+//       console.log(A);
+//       var tmp = []
+//       A.forEach((el,k) => {
+//         tmp.push({
+//           k: el
+//         })
+//       })
+//       data.Array.push({
+//         count: count,
+//         posicao: j,
+//         obj: tmp,
+//         chave: chave
+//       })
+//     }
+//   }
+  
+//   console.log(data);
+//   document.getElementById('view').innerHTML = Mustache.render(tpl, data)
+// })
 
 
 
